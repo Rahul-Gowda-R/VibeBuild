@@ -1,4 +1,4 @@
-## 🚀 SiteSculptor
+## 🚀 VibeBuild
 
 **Build Stunning Websites with AI Assistance**
 Transform your ideas into fully functional websites using cutting-edge AI technology. This project leverages **Next.js, Tailwind CSS, and OpenAI GPT** to streamline web development.
