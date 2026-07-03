@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# environment variables
+.env.local
+.env
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Convex
+.convex/
+
+# Build
+dist/

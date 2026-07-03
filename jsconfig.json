@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "ignoreDeprecations": "6.0"
+  },
+  "exclude": ["node_modules"]
+}
