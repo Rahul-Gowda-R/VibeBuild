@@ -1,133 +1,172 @@
-## 🚀 VibeBuild
+# 🚀 VibeBuild
 
-**Build Stunning Websites with AI Assistance**
-Transform your ideas into fully functional websites using cutting-edge AI technology. This project leverages **Next.js, Tailwind CSS, and OpenAI GPT** to streamline web development.
-
----
-
-## 🌟 Features
-
-### 🤖 AI-Powered Assistance
-
-* **Content Generation**: Automatically generate SEO-friendly text, images, and code snippets using AI.
-* **Code Synthesis**: Convert natural language prompts into React components with real-time previews.
-* **Smart Recommendations**: Get AI-driven suggestions for layout improvements and design enhancements.
-
-### 🎨 Design & Collaboration
-
-* **Theme Customization**: Switch between light/dark modes and customize themes effortlessly.
-* **Real-Time Collaboration**: Multiple users can edit simultaneously using [Convex](https://convex.dev) backend.
-* **Export Options**: Download generated code as ZIP files for seamless integration into other projects.
-
-### ⚡ Modern Tech Stack
-
-* **Next.js 14**: Server-side rendering, API routes, and optimized performance.
-* **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-* **AI Integration**: Powered by OpenAI GPT for intelligent content generation.
+**SiteSculptor** is an AI-powered website generator that transforms natural language prompts into fully functional React websites. It leverages **Google Gemini AI** for prompt enhancement and code generation, **Sandpack** for live code preview, and **Convex** for workspace persistence.
 
 ---
 
-## 🛠️ Getting Started
+## ✨ Features
 
-### Prerequisites
+- 🤖 AI-powered website generation from text prompts
+- 📝 Intelligent prompt enhancement
+- ⚡ Live code generation using Google Gemini
+- 💻 Real-time code editor and preview with Sandpack
+- 💾 Workspace persistence using Convex
+- 📦 Download generated projects as ZIP
+- 📱 Responsive UI
+- 🎨 Tailwind CSS support
+- 🔄 Real-time project updates
 
-* Node.js v18+
-* npm, yarn, or pnpm
-* OpenAI API key (for AI features)
+---
 
-### Installation
+## 🛠️ Tech Stack
 
-1. Clone the repository:
+### Frontend
+- React.js
+- Next.js 15
+- JavaScript (ES6+)
+- Tailwind CSS
 
-   ```bash
-   git clone https://github.com/sagarbj3245/SiteSculptor.git
-   cd SiteSculptor
-   ```
+### AI
+- Google Gemini API
+- Prompt Engineering
+- Generative AI
 
-2. Install Dependencies
+### Backend
+- Next.js API Routes
+- Convex
 
-   ```bash
-   npm install  # or yarn/pnpm
-   ```
+### Live Preview
+- Sandpack
+- CodeSandbox Runtime
 
-3. Set Up Environment Variables
-   Create a `.env.local` file in the root directory and add the following:
-
-   ```env
-   OPENAI_API_KEY=your_openai_api_key_here
-   NEXT_PUBLIC_CONVEX_URL=your_convex_url
-   ```
-
-4. Start the Development Server
-
-   ```bash
-   npm run dev
-   ```
-
-5. Visit the Application
-   Open your browser and go to:
-
-   ```
-   http://localhost:3000
-   ```
+### Libraries
+- Axios
+- React Markdown
+- Lucide React
+- JSZip
 
 ---
 
 ## 📂 Project Structure
 
-```bash
-.
-├── app/           # Next.js page routes and layouts
-├── components/    # Reusable React components (Header, AI Chat, etc.)
-├── config/        # AI model configurations and API settings
-├── context/       # React context providers (Theme, User, AI State)
-├── convex/        # Convex backend functions and database schema
-├── data/          # Static data and prompt templates
-├── lib/           # Utilities (API clients, theme handlers)
-├── public/        # Static assets (images, fonts)
-├── styles/        # Global CSS and Tailwind configurations
+```
+SiteSculptor/
+│
+├── app/
+├── components/
+├── configs/
+├── context/
+├── convex/
+├── data/
+├── public/
+├── package.json
+└── README.md
 ```
 
 ---
 
-## 🔧 Tech Stack
+## 🚀 Getting Started
 
-| Technology         | Purpose                      |
-| ------------------ | ---------------------------- |
-| **Next.js**        | Framework for SSR & Routing  |
-| **Tailwind CSS**   | Styling & Responsive Design  |
-| **Convex**         | Real-time Database & Backend |
-| **OpenAI API**     | AI Content Generation        |
-| **React Markdown** | Render AI-generated Markdown |
+### Clone the repository
 
----
+```bash
+git clone https://github.com/your-username/SiteSculptor.git
+cd SiteSculptor
+```
 
-## 📚 Documentation
+### Install dependencies
 
-* **[Next.js: Official Guide](https://nextjs.org/docs)**
-* **[Tailwind CSS: Documentation](https://tailwindcss.com/docs)**
-* **[Convex Setup: Getting Started](https://docs.convex.dev/quickstart)**
-* **[OpenAI API: API Reference](https://platform.openai.com/docs)**
+```bash
+npm install
+```
 
----
+### Configure Environment Variables
 
-## 🚀 Deployment
+Create a `.env.local` file in the project root.
 
-Deploy to Vercel in one click:
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+GEMINI_MODEL=gemini-2.5-flash
 
-[![Deploy](https://vercel.com/button)](https://vercel.com/new)
-
-### Required Environment Variables:
-
-* `OPENAI_API_KEY`
-* `NEXT_PUBLIC_CONVEX_URL`
+NEXT_PUBLIC_CONVEX_URL=YOUR_CONVEX_URL
+CONVEX_DEPLOYMENT=YOUR_DEPLOYMENT
+```
 
 ---
 
-## 🙌 Acknowledgements
+### Start the development server
 
-* **OpenAI GPT** for advanced language models
-* **Vercel** for hosting support
-* **Convex** for real-time backend infrastructure
+```bash
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
 
 ---
+
+## 🧠 How It Works
+
+1. User enters a website idea.
+2. AI enhances the prompt.
+3. Gemini generates React + Tailwind code.
+4. Sandpack renders the project instantly.
+5. Workspace is saved using Convex.
+6. Users can download the generated project.
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+> Add screenshot here
+
+### AI Prompt Enhancement
+
+> Add screenshot here
+
+### Live Code Preview
+
+> Add screenshot here
+
+### Generated Website
+
+> Add screenshot here
+
+---
+
+## 📌 Future Improvements
+
+- AI project repair system
+- GitHub export
+- One-click deployment (Vercel/Netlify)
+- Multiple templates
+- Project version history
+- Streaming AI responses
+- Authentication
+- Multi-language support
+
+---
+
+## 👨‍💻 Author
+
+**Rahul Gowda**
+
+- GitHub: https://github.com/Rahul-Gowda-R
+- LinkedIn: https://www.linkedin.com/in/rahul-gowda-r
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
